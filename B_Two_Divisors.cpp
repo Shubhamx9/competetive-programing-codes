@@ -1,39 +1,35 @@
-#include<iostream>
-using namespace std;
-int main(){
-int x;
-cin>>x;
-while (x--)
+#include <iostream>
+long long gcd(long long a, long long b)
 {
-    int a,b;
-    cin>>a>>b;
-    if (a>b)
+    while (b != 0)
     {
-        /* code */for (size_t i = 2; 1<2; i++)
-        {
-            if (a*i%b==0)
-            {
-        cout<<a*i<<endl;break;
-                /* code */
-            }
-            
-        }
+        long long temp = b;
+        b = a % b;
+        a = temp;
     }
-    if (b>a)
-    {
-        /* code */for (size_t i = 2; 1<2; i++)
-        {
-          
-           if (b*i%a==0)
-           {
-        cout<<b*i<<endl;break;
-            /* code */
-           }
-           
-        }
-    }
-    
+    return a;
 }
 
-return 0;
+long long lcm(long long a, long long b)
+{
+    return (a * b) / gcd(a, b);
+}
+using namespace std;
+int main()
+{
+    long long t, a, b;
+    cin >> t;
+    while (t--)
+    {
+        cin >> a >> b;
+        if (b % a == 0)
+        {
+            cout << b * (b / a) << endl;
+        }
+        else
+        {
+            cout << lcm(a, b) << endl;
+        }
+    }
+    return 0;
 }

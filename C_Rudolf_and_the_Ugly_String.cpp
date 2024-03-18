@@ -1,35 +1,30 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int x;
-    cin >> x;
-    while (x--)
-    {
-        int y, count = 0;
-        cin >> y;
-        string ar;
-        cin >> ar;
-        for (size_t i = 0; i < y; i++)
+    int x,count=0;
+    cin>>x;
+    while(x--){
+        string s;
+        cin>>s;
+        for (int i = 0; i < s.length(); i++)
         {
-            if (ar[i] == 'm' && ar[i + 1] == 'a' && ar[i + 2] == 'p')
+            if (i + 2 < s.length() && s[i]=='p'&&s[i+1]=='i'&&s[i+2]=='e')
             {
-
                 count++;
-                if (ar[i+3]=='i')
-                {
-                   i=i+3;
-                }
-                
+                i+=3;
             }
-            if (ar[i] == 'p' && ar[i + 1] == 'i' && ar[i + 2] == 'e')
+            else if (i + 2 < s.length() && s[i]=='m'&&s[i+1]=='a'&&s[i+2]=='p')
             {
-
                 count++;
+                i+=3;
             }
-
+            else{
+                i++;
+            }
         }
-            cout << count << endl;
+        cout<<count<<endl;
+      
     }
-        return 0;
-    }
+    return 0;
+}
