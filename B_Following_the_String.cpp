@@ -1,77 +1,145 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-    int t, n, x;
-    cin >> t;
-    while (t--)
-    {
-        cin >> n;
-        int arr[n] = {0};
-        while (n--)
-        {
-            cin >> x;
-            cout << char('a' + arr[x]);
-            arr[x]++;
-        }
-        cout << endl;
-    }
-    return 0;
-}
+// // #include<iostream>
+// // #include<vector>
+// // int count(vector<int>v){
+// // int counter=0;
+// // for (int i = 0; i < v.size(); i++)
+// // {
+// //     if (v[i==0])
+// //     {
+// //         counter++;
+// //     }
 
-// #include <vector>
+// // }
+// // return counter;
+// // }
+// // using namespace std;
+// // int main()
+// // {int y;
+// // cin>>y;
+// // while (y--)
+// // {
+// //     int svv;
+// //     cin>>svv;
+// //     vector<int>vv;
+// //     for (size_t i = 0; i < svv; i++)
+// //     {
+// //         cin>>vv[i];
+// //     }
+
+// // }
+
+// // return 0;
+// // }
+// #include<iostream>
 // using namespace std;
-// int countZeroes(const vector<int>& vii)
+// int main()
 // {
-//     int zeroCount = 0;
-//     for (int i = 0; i < vii.size(); ++i)
+//     int x;
+//     cin>>x;
+//     while (x--)
 //     {
-//         if (vii[i] == 0)
+//         int y,zc=0,sc=0,elefag=0;
+//         cin>>y;
+//         int arr[y];
+//         char vs[y];
+//         string s ="abcdefghijklmnopqrstuvwxyz";
+//         for (int i = 0; i < y ;i++)
 //         {
-//             zeroCount++;
+//             cin>>arr[i];
 //         }
+//         for (int i = 0; i < y; i++)
+//         {
+//             if (arr[i]==0)
+//             {
+//                zc++;
+//             }
+
+//         }
+//         while (zc--)
+//         {
+//            for (int i = 0; i < y; i++)
+//            {
+//             if (arr[i]==elefag)
+//             {
+//               vs[i]=s[sc];
+//               elefag++;
+//               arr[i]=27;
+//             }
+
+//            }
+//            sc++;
+//         }
+//         for (int i = 0; i < y; i++)
+//         {
+//            cout<<vs[i] ;
+//         }
+//         cout<<endl;
+
 //     }
-//     return zeroCount;
+
+// return 0;
 // }
+// #include <iostream>
+// #include <vector>
+
+// using namespace std;
+
 // int main()
 // {
 //     int x;
 //     cin >> x;
+
 //     while (x--)
 //     {
-//         string s = "abcdefghijklmnopqrstuvwxyz";
-//         vector<char> v;
-//         int y, sf = 0;
+//         int y, zc = 0, sc = 0;
 //         cin >> y;
-//         vector<int> vi;
-//         for (int i = 0; i < y; i++)
-//         {int num;
-//             cin>>num;
-//             vi.push_back(num);
-//         }
-//         int nz = countZeroes(vi);
-//         while (nz--)
-//         {
 
+//         vector<int> arr(y);
+//         vector<char> vs(y);
+
+//         string s = "abcdefghijklmnopqrstuvwxyz";
+
+//         for (int i = 0; i < y; i++)
+//         {
+//             cin >> arr[i];
+//         }
+
+//         for (int i = 0; i < y; i++)
+//         {
+//             if (arr[i] == 0)
+//             {
+//                 zc++;
+//             }
+//         }
+
+//         while (zc--)
+//         {
+//             int elefag = 0;
 //             for (int i = 0; i < y; i++)
 //             {
-//                 int flag = 0;
-//                 if (vi[i] == flag)
+//                 if (arr[i] == elefag)
 //                 {
-//                     v.[i]=(s[sf]);
-//                     flag++;
-//                     vi.erase(vi.begin()+i);
+//                     vs[i] = s[sc];
+//                     elefag++;
+//                     arr[i] = 27;
 //                 }
 //             }
-//             sf++;
+//             sc++;
 //         }
 
-//         for (int i = 0; i < v.size(); i++)
+//         for (int i = 0; i < y; i++)
 //         {
-//             cout << v[i];
+//             cout << vs[i];
 //         }
 //         cout << endl;
-//         cout<<nz<<endl;
 //     }
 
 //     return 0;
+// }
+#include<iostream>
+using namespace std;
+int main()
+
+{cout<<(char)(2+'a');
+return 0;
+}
